@@ -58,10 +58,10 @@ class BookList {
    def getBooksBetweenYears(firstYear : Int, lastYear : Int) : MutableList[Book] = {
      
       val betweenYearList = MutableList[Book]()
-      for (y <- firstYear to lastYear){
-           for (n <- list){
-               if (n.year == y){
-                   betweenYearList += n
+      for (i <- firstYear to lastYear){
+           for (x <- list){
+               if (x.year == i){
+                   betweenYearList += x
                }
           }
        }
